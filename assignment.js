@@ -50,10 +50,26 @@ function hotelCost(dayStayed) {
             var firstPart = 10 * 100;
             var secondPart = 10 * 80;
             var remainingDays = dayStayed - 20;
-            var thirdPart = remainingDays * 50;
+            var restPart = remainingDays * 50;
 
-            totalCost = firstPart + secondPart + thirdPart;
+            totalCost = firstPart + secondPart + restPart;
             return totalCost;
         }
     }
+}
+
+// finding largest name
+function megaFriend(names) {
+    var max = 0;
+    var largestName = names[0];
+    for (var i = 0; i < names.length; i++) {
+        if (names[i] == ' ') {
+            return "ERROR! Names can not be white spaces. Please Enter names.";
+        }
+        else if (names[i].length > max) {
+            max = names[i].length;
+            largestName = names[i];
+        }
+    }
+    return largestName;
 }
