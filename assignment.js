@@ -4,7 +4,7 @@
 function kilometerToMeter(kilometer) {
     if (kilometer < 0) {
         return "ERROR! Please Enter a valid (positive) number. Distance can not be a negative number.";
-    } // used if else method to check whether the distance is in negative number or not
+    } // to check whether the distance is in negative number or not
     else {
         const meter = 1000;
         var meterResult = kilometer * meter;
@@ -16,7 +16,7 @@ function kilometerToMeter(kilometer) {
 function budgetCalculator(clockNum, phoneNum, laptopNum) {
     if (clockNum < 0 || phoneNum < 0 || laptopNum < 0) {
         return "ERROR! Please Enter a valid (positive) number. Product can not be a negative number.";
-    } // used if else method to check whether the products are in negative number or not
+    } // to check whether the products are in negative number or not
     else {
         var clocksCost = clockNum * 50;
         var phonesCost = phoneNum * 100;
@@ -32,7 +32,7 @@ function hotelCost(dayStayed) {
     var totalCost = 0;
     if (dayStayed < 0) {
         return "ERROR! Please Enter a valid (positive) number. Stayed days can not be a negative number.";
-    }
+    } // to check stayed days are negative or not
     else {
         if (dayStayed <= 10) {
             totalCost = dayStayed * 100;
@@ -65,7 +65,7 @@ function megaFriend(names) {
     for (var i = 0; i < names.length; i++) {
         if (names[i] == ' ') {
             return "ERROR! Names can not be white spaces. Please Enter names.";
-        }
+        } // to check array has white space or not
         else if (names[i].length > max) {
             max = names[i].length;
             largestName = names[i];
